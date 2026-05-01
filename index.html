@@ -2,19 +2,146 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>Tommy Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canarya Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #334155;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      background: #334155;
+    }
+
+    .links a {
+      color: #38bdf8;
+      margin-right: 15px;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag {
+      background: #334155;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+
+    @media (min-width: 600px) {
+      .projects {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Tommy Portfolio</h1>
-  <p>Webアプリ開発・リアルタイム通信・AI秘書開発に興味があります。</p>
+  <div class="container">
 
-  <h2>Projects</h2>
-  <h3>Squi</h3>
-  <p>Node.js / Express / Socket.io を使ったオンライン早押しクイズアプリ。</p>
+    <!-- Header -->
+    <h1>Canarya</h1>
+    <p>Web Developer / Student</p>
+    <p>リアルタイムWebアプリやAIエージェントを開発しています</p>
 
-  <h2>Links</h2>
-  <p>
-    <a href="https://github.com/あなたのユーザー名">GitHub</a>
-  </p>
+    <!-- Projects -->
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <div class="card">
+        <h3>Squi</h3>
+        <p>オンライン早押しクイズアプリ。リアルタイム通信とルーム機能を実装。</p>
+      </div>
+
+      <div class="card">
+        <h3>Rei</h3>
+        <p>自己進化型AI秘書プロジェクト。デスクトップ操作と自動改善を目指す。</p>
+      </div>
+
+      <div class="card">
+        <h3>OLTM</h3>
+        <p>オンライン学習・管理系ツール（開発中）。</p>
+      </div>
+
+      <div class="card">
+        <h3>Wlite</h3>
+        <p>軽量レポート作成エディタ。シンプルで高速な文書作成を実現。</p>
+      </div>
+
+    </div>
+
+    <!-- Tech Stack -->
+    <h2>Tech Stack</h2>
+    <div class="stack">
+      <div class="tag">HTML</div>
+      <div class="tag">CSS</div>
+      <div class="tag">JavaScript</div>
+      <div class="tag">Node.js</div>
+      <div class="tag">Express</div>
+      <div class="tag">Socket.io</div>
+      <div class="tag">SQLite</div>
+      <div class="tag">Raspberry Pi</div>
+      <div class="tag">Cloudflare</div>
+    </div>
+
+    <!-- About -->
+    <h2>About</h2>
+    <p>信州大学の学生。Web開発とAIエージェントに興味があります。</p>
+
+    <!-- Links -->
+    <h2>Links</h2>
+    <div class="links">
+      <a href="https://github.com/あなたのユーザー名" target="_blank">GitHub</a>
+      <a href="https://twitter.com/あなたのユーザー名" target="_blank">Twitter</a>
+    </div>
+
+  </div>
 </body>
 </html>
